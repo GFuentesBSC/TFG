@@ -1,0 +1,13 @@
+EJEMPLOS EXTRAIDOS DE: https://github.com/keras-team/keras/blob/master/examples
+
+
+-> les he modificado los imports para que usen librerías únicamente de tf.keras:
+
+    ✓ import keras -->> import tensorflow.keras as keras
+    ✓ from keras.layers.normalization import BatchNormalization -->> from tensorflow.keras.layers import BatchNormalization
+
+
+Errores:
+babi_rnn.py no funciona porque el uso de RNNs cambia entre keras y tf.keras (no es trivial)
+cnn_seq2seq.py no funciona pq hay un path a un archivo inexistente
+img_ocr.py weird error: 'TextImageGenerator' object has no attribute 'cur_train_index'
